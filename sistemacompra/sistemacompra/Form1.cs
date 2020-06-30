@@ -16,12 +16,5 @@ namespace sistemacompra
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Luego podremos usarla desde cualquier otro lugar
-            conexion conectar = new conexion();
-            conectar.abrir();
-        }
     }
 }
