@@ -14,17 +14,19 @@ namespace sistemacompra.modelo
     
     public partial class Product
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
-            this.Buy_Detail = new HashSet<Buy_Detail>();
+            this.BuyDetail = new HashSet<BuyDetail>();
         }
     
         public int id_prod { get; set; }
-        public string nom_prod { get; set; }
-        public string desc_prod { get; set; }
+        public string name_prod { get; set; }
+        public string description_prod { get; set; }
         public int Provider_id_prov { get; set; }
     
-        public virtual ICollection<Buy_Detail> Buy_Detail { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<BuyDetail> BuyDetail { get; set; }
         public virtual Provider Provider { get; set; }
     }
 }

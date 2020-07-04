@@ -60,16 +60,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\HistorialComprasController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="modelo\Buy.cs">
+    <Compile Include="modelo\BuyDetail.cs">
       <DependentUpon>dbpurchases.tt</DependentUpon>
     </Compile>
-    <Compile Include="modelo\Buy_Detail.cs">
+    <Compile Include="modelo\Buy_db.cs">
       <DependentUpon>dbpurchases.tt</DependentUpon>
     </Compile>
     <Compile Include="modelo\dbpurchases.Context.cs">
@@ -96,8 +97,16 @@
     <Compile Include="modelo\Provider.cs">
       <DependentUpon>dbpurchases.tt</DependentUpon>
     </Compile>
+    <Compile Include="modelo\sysdiagrams.cs">
+      <DependentUpon>dbpurchases.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchasesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>purchasesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="vista\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +173,12 @@
     <Compile Include="vista\frmSecundarios\frmGestionarUsuario.Designer.cs">
       <DependentUpon>frmGestionarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="vista\frmSecundarios\frmHistorialCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmSecundarios\frmHistorialCompras.Designer.cs">
+      <DependentUpon>frmHistorialCompras.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -206,22 +221,15 @@
     <EmbeddedResource Include="vista\frmSecundarios\frmGestionarUsuario.resx">
       <DependentUpon>frmGestionarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmSecundarios\frmHistorialCompras.resx">
+      <DependentUpon>frmHistorialCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="modelo\dbpurchases.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>dbpurchases.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="modelo\dbpurchases.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dbpurchases.edmx</DependentUpon>
-      <LastGenOutput>dbpurchases.Context.cs</LastGenOutput>
-    </None>
     <None Include="modelo\dbpurchases.edmx.diagram">
       <DependentUpon>dbpurchases.edmx</DependentUpon>
-    </None>
-    <None Include="modelo\dbpurchases.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dbpurchases.edmx</DependentUpon>
-      <LastGenOutput>dbpurchases.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -233,12 +241,36 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="purchasesDataSet.xsc">
+      <DependentUpon>purchasesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="purchasesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>purchasesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="purchasesDataSet.xss">
+      <DependentUpon>purchasesDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="modelo\dbpurchases.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbpurchases.edmx</DependentUpon>
+      <LastGenOutput>dbpurchases.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="modelo\dbpurchases.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbpurchases.edmx</DependentUpon>
+      <LastGenOutput>dbpurchases.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\Bunifu_UI_v1.5.3.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
