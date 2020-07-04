@@ -94,5 +94,10 @@ namespace sistemacompra.vista.frmPadres
         {
 
         }
+
+        private void btnCompra_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
