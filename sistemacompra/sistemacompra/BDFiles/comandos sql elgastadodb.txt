@@ -1,0 +1,72 @@
+La empresa de Ropa "El Gastado" exporta productos del exterior, necesita almacenar la información de sus proveedores, la lista de sus productos y las compras realizadas, además necesita tener un historial de pagos de las compras realizadas.
+
+SHOW databases
+CREATE DATABASE ElGastado
+USE ElGastado
+
+ALMACEN
+CREATE DATABASE ELGASTADO
+
+CREATE TABLE Users
+(
+id_user int not null auto_increment, 
+username varchar(30) not null, 
+password varchar(30) not null, 
+primary key (id_user) 
+)
+
+CREATE TABLE Provider
+(
+id_provider int not null primary key, 
+name varchar(50) not null,
+country varchar(50) not null, 
+swift varchar(45) not null
+)
+
+CREATE TABLE Product
+(
+cod_product int not null primary key, 
+name varchar(30) not null, 
+description varchar(30) not null,
+id_provider int not null, 
+foreign key (id_provider) references Provider(id_provider)
+)
+ 
+CREATE TABLE PayDetail
+(
+id_paydetail int not null auto_increment primary key,
+date datetime not null, 
+pay float not null, 
+bank_name varchar(70) not null
+)
+
+CREATE TABLE BuyDetail
+(
+id_buydetail int not null auto_increment primary key, 
+amount int not null, 
+price float not null, 
+subtotal float not null, 
+cod_product int, 
+id_paydetail int, 
+foreign key(cod_product) references Product(cod_product),
+foreign key(id_paydetail) references PayDetail(id_paydetail) 
+)
+
+CREATE TABLE Buy
+(
+id_buy int not null primary key auto_increment,
+date datetime not null, 
+total float not null, 
+observation varchar(90), 
+id_status int not null, 
+id_buydetail int not null, 
+FOREIGN KEY(id_buydetail) REFERENCES BuyDetail(id_buydetail),
+FOREIGN KEY(id_status) REFERENCES Status(id_status)
+)
+
+CREATE TABLE Status
+(
+id_status int not null auto_increment primary key,
+description varchar(45) not null 
+)
+

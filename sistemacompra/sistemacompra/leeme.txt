@@ -1,0 +1,32 @@
+Rama del proyecto con MySQL 
+-------------------------------------------------------------
+***********************ESPECIFICACIONES**********************
+-------------------------------------------------------------
+La presente ramificacion contiene la configuracion de la BD en mysql 
+de forma local
+
+en el documento BDFiles estan 
+-El Script de Mysql para importar las tablas y entidades
+-El modelo relacional
+-Los comandos para añadir las tablas manualmente mas sus relaciones
+-Mysql-connector-net
+-Mysql-for-visualstudio
+-------------------------------------------------------------
+***********************INSTRUCCIONES**********************
+-------------------------------------------------------------
+(opcional) Instalar Mysql WorkBench
+ https://dev.mysql.com/downloads/workbench/ 
+2.-importar ElGastadodbimport.sql a MySql Workbench 
+3.-Instalar los dos ejecutables Mysql connector y mysql for visualstudio
+4.-Ingresar al proyecto e ir a explorador de archivos/ segundo boton del raton en referencias/ añadir referencia y buscar y tickear MySql.Data 
+5.-Puede testear la conexion de la bd compilando el programa
+con la siguiente informacion
+serverIP = localhost (puerto ip a mysql por defecto localhost)
+port= (por defecto 3306)
+user= (usuario de mysql)
+password=(contraseña de mysql)
+
+
+
+
+
