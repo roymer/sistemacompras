@@ -12,16 +12,15 @@ namespace sistemacompra.modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class Buy_Detail
+    public partial class BuyDetail
     {
-        public int id_bd { get; set; }
         public string amount_bd { get; set; }
-        public string price { get; set; }
-        public string sub_total { get; set; }
+        public string price_bd { get; set; }
+        public string subtotal_bd { get; set; }
         public int Product_id_prod { get; set; }
-        public int Buy_id_buy { get; set; }
+        public decimal Buy_db_Buy_db_ID { get; set; }
     
-        public virtual Buy Buy { get; set; }
+        public virtual Buy_db Buy_db { get; set; }
         public virtual Product Product { get; set; }
     }
 }

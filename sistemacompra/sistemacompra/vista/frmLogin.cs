@@ -24,5 +24,10 @@ namespace sistemacompra.vista
             frmPrincipal fm = new frmPrincipal();
             fm.Show();
         }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,13 +12,12 @@ namespace sistemacompra.modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class PayDetail
+    public partial class sysdiagrams
     {
-        public Nullable<System.DateTime> date_pd { get; set; }
-        public string pay_pd { get; set; }
-        public string bank_pd { get; set; }
-        public decimal Buy_db_Buy_db_ID { get; set; }
-    
-        public virtual Buy_db Buy_db { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
