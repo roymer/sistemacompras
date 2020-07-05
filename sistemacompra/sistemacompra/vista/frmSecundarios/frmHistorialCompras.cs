@@ -82,5 +82,10 @@ namespace sistemacompra.vista.frmSecundarios
             }
             
         }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

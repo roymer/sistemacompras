@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using sistemacompra.vista.frmNuevos;
+using sistemacompra.vista.frmPadres;
 namespace sistemacompra
 {
     static class Program

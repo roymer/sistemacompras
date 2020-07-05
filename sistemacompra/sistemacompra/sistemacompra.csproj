@@ -11,6 +11,21 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,8 +47,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\..\..\Documents\Visual Studio 2019\Bunifu UI\Bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\..\..\..\..\Documents\Visual Studio 2019\Bunifu UI\Bunifu\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Documents\Visual Studio 2019\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -102,10 +123,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="purchasesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>purchasesDataSet.xsd</DependentUpon>
+=======
+    <Compile Include="PURCHASESDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PURCHASESDataSet.xsd</DependentUpon>
+>>>>>>> cc636bc260fb0a271d1fdb4232f226655a5160af
     </Compile>
     <Compile Include="vista\frmLogin.cs">
       <SubType>Form</SubType>
@@ -173,12 +201,21 @@
     <Compile Include="vista\frmSecundarios\frmGestionarUsuario.Designer.cs">
       <DependentUpon>frmGestionarUsuario.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="vista\frmSecundarios\frmHistorialCompras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vista\frmSecundarios\frmHistorialCompras.Designer.cs">
       <DependentUpon>frmHistorialCompras.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="vista\frmNuevos\frmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> cc636bc260fb0a271d1fdb4232f226655a5160af
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -221,8 +258,13 @@
     <EmbeddedResource Include="vista\frmSecundarios\frmGestionarUsuario.resx">
       <DependentUpon>frmGestionarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="vista\frmSecundarios\frmHistorialCompras.resx">
       <DependentUpon>frmHistorialCompras.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="vista\frmNuevos\frmPago.resx">
+      <DependentUpon>frmPago.cs</DependentUpon>
+>>>>>>> cc636bc260fb0a271d1fdb4232f226655a5160af
     </EmbeddedResource>
     <EntityDeploy Include="modelo\dbpurchases.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -241,6 +283,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< HEAD
     <None Include="purchasesDataSet.xsc">
       <DependentUpon>purchasesDataSet.xsd</DependentUpon>
     </None>
@@ -251,6 +294,18 @@
     </None>
     <None Include="purchasesDataSet.xss">
       <DependentUpon>purchasesDataSet.xsd</DependentUpon>
+=======
+    <None Include="PURCHASESDataSet.xsc">
+      <DependentUpon>PURCHASESDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PURCHASESDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PURCHASESDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PURCHASESDataSet.xss">
+      <DependentUpon>PURCHASESDataSet.xsd</DependentUpon>
+>>>>>>> cc636bc260fb0a271d1fdb4232f226655a5160af
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +315,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="modelo\dbpurchases.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>dbpurchases.edmx</DependentUpon>
@@ -271,6 +327,13 @@
       <LastGenOutput>dbpurchases.cs</LastGenOutput>
     </Content>
     <Content Include="Resources\Bunifu_UI_v1.5.3.dll" />
+=======
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+>>>>>>> cc636bc260fb0a271d1fdb4232f226655a5160af
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
