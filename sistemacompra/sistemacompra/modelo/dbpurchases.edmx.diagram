@@ -4,15 +4,35 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="545a61cd8942468c9453159abd499e32" Name="Diagram1">
-        <EntityTypeShape EntityType="purchasesModel.Buy" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="purchasesModel.Buy_Detail" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+<<<<<<< HEAD
+      <Diagram DiagramId="76719c2218e34bed8834246464b22f5a" Name="Diagram1">
+        <EntityTypeShape EntityType="purchasesModel.Buy" Width="1.5" PointX="2.875" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.Buy_Detail" Width="1.5" PointX="5.375" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="purchasesModel.PayDetail" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+=======
+<<<<<<< HEAD
+      <Diagram DiagramId="495f58c946e94e729c60e2ac73066714" Name="Diagram1">
+        <EntityTypeShape EntityType="purchasesModel.Buy_db" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.Product" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.Provider" Width="1.5" PointX="1.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.BuyDetail" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.PayDetail" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="purchasesModel.BuyDetail_Buy_db_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="purchasesModel.PayDetail_Buy_db_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="purchasesModel.BuyDetail_Product_FK" ManuallyRouted="false" />
+=======
+      <Diagram DiagramId="76719c2218e34bed8834246464b22f5a" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="purchasesModel.Buy" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.Buy_Detail" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="purchasesModel.PayDetail" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+>>>>>>> 46f1df50d37e4ad3467aa51c293331094f95f9c1
         <EntityTypeShape EntityType="purchasesModel.Product" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="purchasesModel.Provider" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="purchasesModel.Buy_Detail_Buy_FK" ManuallyRouted="false" />
         <AssociationConnector Association="purchasesModel.PayDetail_Buy_FK" ManuallyRouted="false" />
         <AssociationConnector Association="purchasesModel.Buy_Detail_Product_FK" ManuallyRouted="false" />
+>>>>>>> cc636bc260fb0a271d1fdb4232f226655a5160af
         <AssociationConnector Association="purchasesModel.Product_Provider_FK" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

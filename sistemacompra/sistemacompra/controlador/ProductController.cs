@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sistemacompra.controlador
+namespace sistemacompra.controlador             ///no me deja ver las vistas 
 {
     class ProductController
     {
