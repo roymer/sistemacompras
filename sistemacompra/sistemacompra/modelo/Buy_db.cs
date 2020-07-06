@@ -12,24 +12,32 @@ namespace sistemacompra.modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class Buy
+    public partial class Buy_db
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+<<<<<<< HEAD:sistemacompra/sistemacompra/modelo/Buy.cs
         public Buy()
+=======
+        public Buy_db()
+>>>>>>> 46f1df50d37e4ad3467aa51c293331094f95f9c1:sistemacompra/sistemacompra/modelo/Buy_db.cs
         {
-            this.Buy_Detail = new HashSet<Buy_Detail>();
-            this.PayDetail = new HashSet<PayDetail>();
+            this.BuyDetail = new HashSet<BuyDetail>();
         }
     
-        public int id_buy { get; set; }
         public Nullable<System.DateTime> date_buy { get; set; }
         public string total_buy { get; set; }
-        public string observation_buy { get; set; }
+        public string obseration_buy { get; set; }
         public string state_buy { get; set; }
+        public decimal Buy_db_ID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+<<<<<<< HEAD:sistemacompra/sistemacompra/modelo/Buy.cs
         public virtual ICollection<Buy_Detail> Buy_Detail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PayDetail> PayDetail { get; set; }
+=======
+        public virtual ICollection<BuyDetail> BuyDetail { get; set; }
+        public virtual PayDetail PayDetail { get; set; }
+>>>>>>> 46f1df50d37e4ad3467aa51c293331094f95f9c1:sistemacompra/sistemacompra/modelo/Buy_db.cs
     }
 }

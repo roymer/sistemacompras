@@ -1,0 +1,1 @@
+Para cargar la base de datos, primero crear la base de datos "purchases" en el SQL Server, luego recien ejecutar el script SQLServer_purchases, para que coincida con los datos del Entity Framework
