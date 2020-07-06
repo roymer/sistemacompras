@@ -18,7 +18,7 @@ namespace sistemacompra
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vista.frmSecundarios.frmHistorialCompras());
+            Application.Run(new frmLogin());
         }
     }
 }

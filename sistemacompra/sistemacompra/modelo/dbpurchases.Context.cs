@@ -13,10 +13,10 @@ namespace sistemacompra.modelo
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class purchasesEntities1 : DbContext
+    public partial class purchasesEntities : DbContext
     {
-        public purchasesEntities1()
-            : base("name=purchasesEntities1")
+        public purchasesEntities()
+            : base("name=purchasesEntities")
         {
         }
     
@@ -25,11 +25,10 @@ namespace sistemacompra.modelo
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Buy_db> Buy_db { get; set; }
+        public virtual DbSet<Buy> Buy { get; set; }
+        public virtual DbSet<Buy_Detail> Buy_Detail { get; set; }
+        public virtual DbSet<PayDetail> PayDetail { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Provider> Provider { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<BuyDetail> BuyDetail { get; set; }
-        public virtual DbSet<PayDetail> PayDetail { get; set; }
     }
 }

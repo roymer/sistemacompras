@@ -12,19 +12,21 @@ namespace sistemacompra.modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class Buy
     {
-        public Product()
+        public Buy()
         {
             this.Buy_Detail = new HashSet<Buy_Detail>();
+            this.PayDetail = new HashSet<PayDetail>();
         }
     
-        public int id_prod { get; set; }
-        public string nom_prod { get; set; }
-        public string desc_prod { get; set; }
-        public int Provider_id_prov { get; set; }
+        public int id_buy { get; set; }
+        public Nullable<System.DateTime> date_buy { get; set; }
+        public string total_buy { get; set; }
+        public string observation_buy { get; set; }
+        public string state_buy { get; set; }
     
         public virtual ICollection<Buy_Detail> Buy_Detail { get; set; }
-        public virtual Provider Provider { get; set; }
+        public virtual ICollection<PayDetail> PayDetail { get; set; }
     }
 }

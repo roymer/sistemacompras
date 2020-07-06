@@ -26,18 +26,11 @@ namespace sistemacompra.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-<<<<<<< HEAD
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=purchases;Integrated Security=True")]
-        public string purchasesConnectionString {
-            get {
-                return ((string)(this["purchasesConnectionString"]));
-=======
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DAMAGED\\SQLEXPRESS;Initial Catalog=PURCHASES;Integrated Security=True" +
             "")]
         public string PURCHASESConnectionString {
             get {
                 return ((string)(this["PURCHASESConnectionString"]));
->>>>>>> cc636bc260fb0a271d1fdb4232f226655a5160af
             }
         }
     }
