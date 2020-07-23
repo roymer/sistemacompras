@@ -91,6 +91,7 @@
     <Compile Include="modelo\Provider.cs">
       <DependentUpon>dbpurchases.tt</DependentUpon>
     </Compile>
+    <Compile Include="modelo\Singleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
