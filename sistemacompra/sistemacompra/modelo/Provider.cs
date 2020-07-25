@@ -14,10 +14,21 @@ namespace sistemacompra.modelo
     
     public partial class Provider
     {
-        public Provider()
+        private Provider()
         {
-            this.Product = new HashSet<Product>();
+          
         }
+        private static Provider instancia = null;
+        public static Provider obtenerInstancia()
+        {
+            if(instancia == null){ instancia = new Provider();}
+            return instancia;
+        }
+
+        //public Provider()
+        //{
+          //  this.Product = new HashSet<Product>();
+        //}
     
         public int id_prov { get; set; }
         public string name_prov { get; set; }
